@@ -10,11 +10,12 @@ class PureHome extends Component {
   }
 
   componentDidMount() {
-    this.setState(Champions.getAll());
+    Champions
+      .getAll()
+      .then(data => this.setState(data));
   }
 
   render() {
-    console.log(this.state.data);
     return (
       <div>
       </div>
