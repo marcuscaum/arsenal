@@ -1,0 +1,21 @@
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  height: 100vh;
+  background-color: tomato;
+}
+
+.sidebar-menu .logo {
+  font-family: 'Miniver', cursive;
+  color: white;
+  font-size: 70px;
+  font-weight: 100;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.sidebar-menu > div {
+  flex-grow: 1;
+}
