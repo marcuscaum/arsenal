@@ -1,11 +1,7 @@
 import { Api } from '../config';
+import { print } from 'kindred-api';
 
-const getAll = () => (
-  Api.Champion
-    .list()
-    .then(data => data)
-    .catch(error => console.log(error))
-);
+const getAll = () => Api.Static.Champion.list({ tags: 'all' }, print);
 
 export const Champions = {
   getAll,
