@@ -6,8 +6,8 @@ import {
 } from 'kindred-api';
 
 export const Api = new Kindred({
-  key: 'RGAPI-e0762952-bfc4-4b51-8938-596d62c409bf',
-  defaultRegion: REGIONS.EUROPE,
+  key: 'RGAPI-73be25fa-d728-4e84-99fd-b5b8cf9535cf',
+  defaultRegion: REGIONS.BRAZIL,
   limits: LIMITS.DEV, // [[20, 1], [100, 120]] 20 reqs/1s. 100 reqs/2m.
   debug: true,
   showHeaders: true,

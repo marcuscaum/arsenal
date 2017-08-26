@@ -2,7 +2,9 @@
   display: flex;
 }
 
-.app > div:last-child {
+.content {
   flex-grow: 1;
+  height: 100vh;
   width: calc(100vw - 450px);
+  overflow-y: auto;
 }

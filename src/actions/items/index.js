@@ -1,11 +1,11 @@
 import { Api } from '../config';
 
 const getAll = () => (
-  Api.Static.Champion
+  Api.Static.item
     .list({ tags: 'all' })
     .then(data => data)
 )
 
-export const Champions = {
+export const Items = {
   getAll,
 }
