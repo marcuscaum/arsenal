@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Champions } from '../../actions/';
 
+import { List } from '../../shared/components';
 
 class PureHome extends Component {
 
@@ -18,6 +19,7 @@ class PureHome extends Component {
   render() {
     return (
       <div>
+        <List items={this.state.data} />
       </div>
     )
   }
