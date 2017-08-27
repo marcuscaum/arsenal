@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Champions } from '../../actions/';
 
-import { List } from '../../shared/components';
+import { ChampionsList } from './components';
 
 class PureHome extends Component {
 
@@ -22,7 +22,7 @@ class PureHome extends Component {
   render() {
     return (
       <div className='content'>
-        <List images='http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/'type='image' items={this.state.champions.data} />
+        <ChampionsList filter='Mage' images='http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/'type='image' items={this.state.champions.data} />
       </div>
     )
   }
